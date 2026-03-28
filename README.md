@@ -37,7 +37,6 @@ Here’s the recommended structure for your LangGraph project:
 
 <img width="468" height="537" alt="ps1" src="https://github.com/user-attachments/assets/e2c6fa77-cf49-4579-a629-eeaf714ca847" />
 
-
 └── streamlit_components/
 
     
@@ -46,6 +45,8 @@ Here’s the recommended structure for your LangGraph project:
 🔗 Workflow Diagram
 
 <img width="1058" height="2099" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/db09e6ff-74ee-48b7-a0c0-5cc55ff6ae3c" />
+
+
 
 
 
