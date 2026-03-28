@@ -44,7 +44,8 @@ Here’s the recommended structure for your LangGraph project:
 
 🔗 Workflow Diagram
 
-<img width="1058" height="2099" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/db09e6ff-74ee-48b7-a0c0-5cc55ff6ae3c" />
+<img width="1073" height="2107" alt="w1" src="https://github.com/user-attachments/assets/603938aa-a911-45a0-8542-b92d251e491b" />
+
 
 
 
