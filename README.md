@@ -34,37 +34,25 @@ This repository is designed for both learning purposes and practical LLM-based a
 
 Here’s the recommended structure for your LangGraph project:
 
-
 LangGraph_Project/
-│
 ├── README.md
 ├── .gitignore
 ├── requirements.txt
-├── env/                                    # Virtual environment (ignored)
-├── .env                                    # API keys and secrets (ignored)
-│
+├── env/                  # Virtual environment (ignored)
+├── .env                  # API keys (ignored)
 ├── data/
-│   └── chat_history.db   # Persistent chat storage
-│
+│   └── chat_history.db
 ├── langgraph_examples/
 │   ├── llm_example.py
 │   ├── workflow_example.py
-│   ├── prompt_chaining.py
-│   ├── conditional_workflow.py
-│   └── parallel_workflow.py
-│
+│   └── ...
 ├── chatbot/
 │   ├── chatbot_main.py
-│   ├── streaming_chat.py
-│   ├── resume_chat.py
-│   └── db_utils.py
-│
+│   └── ...
 ├── rag/
 │   └── rag_query.py
-│
 ├── tools/
 │   └── tool_examples.py
-│
 └── ui/
     ├── app.py
     └── streamlit_components/
@@ -78,53 +66,41 @@ LangGraph_Project/
 +--------------------+       +------------------+       +------------------+
 | LLM Examples       | --->  | LLM Workflows    | --->  | Prompt Chaining  |
 +--------------------+       +------------------+       +------------------+
-                                   |
-                                   v
-                          +------------------+
-                          | Conditional Flow |
-                          +------------------+
-                                   |
-                                   v
-                          +------------------+
-                          | Parallel Flow    |
-                          +------------------+
-                                   |
-                                   v
-                          +------------------+
-                          | Chatbot Example  |
-                          +------------------+
-                                   |
-                +------------------+------------------+
-                |                                     |
-        +------------------+                   +------------------+
-        | In-memory RAM    |                   | Persistent DB    |
-        | Chat Storage     |                   | Storage          |
-        +------------------+                   +------------------+
-                |
-                v
-        +------------------+
-        | Chatbot Resume   |
-        +------------------+
-                |
-                v
-        +------------------+
-        | Streaming Output |
-        +------------------+
-                |
-                v
-        +------------------+
-        | RAG Queries      |
-        +------------------+
-                |
-                v
-        +------------------+
-        | Tool Integration |
-        +------------------+
-                |
-                v
-        +------------------+
-        | Streamlit UI     |
-        +------------------+
+        |
+        v
+ +------------------+
+ | Conditional Flow |
+ +------------------+
+        |
+        v
+ +------------------+
+ | Parallel Flow    |
+ +------------------+
+        |
+        v
+ +------------------+
+ | Chatbot Example  |
+ +------------------+
+        |
+ +------+------+
+ |             |
+ v             v
+RAM Storage   Persistent DB
+        |
+        v
+  Chatbot Resume
+        |
+        v
+ Streaming Output
+        |
+        v
+      RAG Queries
+        |
+        v
+   Tool Integration
+        |
+        v
+     Streamlit UI
 
 
 
