@@ -36,37 +36,36 @@ Here’s the recommended structure for your LangGraph project:
 
 
 LangGraph_Project/
-
 │
-├── README.md                  # Project documentation
-├── .gitignore                 # Git ignore file
-├── requirements.txt           # Python dependencies
-├── env/                       # Virtual environment (ignored in git)
-├── .env                       # API keys and secrets (ignored in git)
+├── README.md
+├── .gitignore
+├── requirements.txt
+├── env/                                    # Virtual environment (ignored)
+├── .env                                    # API keys and secrets (ignored)
 │
-├── data/                      # Optional datasets
-│   └── chat_history.db        # Persistent chat storage
+├── data/
+│   └── chat_history.db   # Persistent chat storage
 │
-├── langgraph_examples/        # LLM examples
+├── langgraph_examples/
 │   ├── llm_example.py
 │   ├── workflow_example.py
 │   ├── prompt_chaining.py
 │   ├── conditional_workflow.py
 │   └── parallel_workflow.py
 │
-├── chatbot/                   # Chatbot implementations
+├── chatbot/
 │   ├── chatbot_main.py
 │   ├── streaming_chat.py
 │   ├── resume_chat.py
 │   └── db_utils.py
 │
-├── rag/                       # Retrieval-Augmented Generation
+├── rag/
 │   └── rag_query.py
 │
-├── tools/                     # External tools integration
+├── tools/
 │   └── tool_examples.py
 │
-└── ui/                        # Streamlit UI integration
+└── ui/
     ├── app.py
     └── streamlit_components/
 
@@ -74,7 +73,6 @@ LangGraph_Project/
 
 
 🔗 Workflow Diagram
-
 
 
 +--------------------+       +------------------+       +------------------+
@@ -128,7 +126,8 @@ LangGraph_Project/
         | Streamlit UI     |
         +------------------+
 
-        
+
+
 
 ⚡ Setup Instructions
 
@@ -170,6 +169,7 @@ Experiment with RAG in rag/
 Integrate tools in tools/
 Run the interactive UI with Streamlit
 
+
 💡 Notes
 
 
@@ -179,7 +179,10 @@ Keep sensitive keys secret; never upload .env to GitHub.
 Database files for persistent chat storage are in data/.
 
 
+
 # Brief Details about the key concepts that used for the LangGraph Projects:
+
+
 
 | #  | Feature                          | Description                                                                                                  |
 | -- | -------------------------------- | ------------------------------------------------------------------------------------------------------------ |
