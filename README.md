@@ -33,7 +33,10 @@ This repository is designed for both learning purposes and practical LLM-based a
 
 
 Here’s the recommended structure for your LangGraph project:
+
+
 <img width="468" height="537" alt="ps1" src="https://github.com/user-attachments/assets/e2c6fa77-cf49-4579-a629-eeaf714ca847" />
+
 
 └── streamlit_components/
 
