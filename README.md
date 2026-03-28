@@ -34,28 +34,9 @@ This repository is designed for both learning purposes and practical LLM-based a
 
 Here’s the recommended structure for your LangGraph project:
 
-LangGraph_Project/
-├── README.md
-├── .gitignore
-├── requirements.txt
-├── env/                  # Virtual environment (ignored)
-├── .env                  # API keys (ignored)
-├── data/
-│   └── chat_history.db
-├── langgraph_examples/
-│   ├── llm_example.py
-│   ├── workflow_example.py
-│   └── ...
-├── chatbot/
-│   ├── chatbot_main.py
-│   └── ...
-├── rag/
-│   └── rag_query.py
-├── tools/
-│   └── tool_examples.py
-└── ui/
-    ├── app.py
-    └── streamlit_components/
+<img width="887" height="536" alt="project_structure" src="https://github.com/user-attachments/assets/5b4e46bd-edfc-43de-8761-cceae4a8cd60" />
+
+└── streamlit_components/
 
     
 
@@ -77,27 +58,29 @@ LangGraph_Project/
 
 2). Create and activate the virtual environment 
 
-python -m venv env
-# Activate env:
+python -m venv env 
 
+Activate env:
 
-# Windows
+a). Windows
 env\Scripts\activate
 
 
-# macOS/Linux
+b). macOS/Linux
 source env/bin/activate
+
 
 3). Install dependencies
   pip install -r requirements.txt
 
 4). Add your API keys
-   # Create a .env file (ignored in git) and add:
+   Create a .env file (ignored in git) and add:
 
-  HUGGINGFACE_API_KEY=<your_key_here>
+  HUGGINGFACE_API_KEY = " HUGGINGFACE_API_KEY " 
 
 5). Run Streamlit UI
  streamlit run ui/app.py
+ 
 
 🔧 Usage
 
@@ -112,10 +95,12 @@ Run the interactive UI with Streamlit
 💡 Notes
 
 
+
 .env and virtual environment folder (env/) are ignored via .gitignore.
 Use requirements.txt to install all dependencies.
 Keep sensitive keys secret; never upload .env to GitHub.
 Database files for persistent chat storage are in data/.
+
 
 
 
