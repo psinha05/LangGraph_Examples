@@ -30,8 +30,13 @@ This repository is designed for both learning purposes and practical LLM-based a
 
 
 🗂 Project Structure:
+
+
 Here’s the recommended structure for your LangGraph project:
+
+
 LangGraph_Project/
+
 │
 ├── README.md                  # Project documentation
 ├── .gitignore                 # Git ignore file
@@ -65,8 +70,12 @@ LangGraph_Project/
     ├── app.py
     └── streamlit_components/
 
+    
+
 
 🔗 Workflow Diagram
+
+
 
 +--------------------+       +------------------+       +------------------+
 | LLM Examples       | --->  | LLM Workflows    | --->  | Prompt Chaining  |
@@ -132,8 +141,12 @@ LangGraph_Project/
 
 python -m venv env
 # Activate env:
+
+
 # Windows
 env\Scripts\activate
+
+
 # macOS/Linux
 source env/bin/activate
 
@@ -149,6 +162,8 @@ source env/bin/activate
  streamlit run ui/app.py
 
 🔧 Usage
+
+
 Explore LLM examples in langgraph_examples/
 Test chatbot functionality in chatbot/
 Experiment with RAG in rag/
@@ -156,6 +171,8 @@ Integrate tools in tools/
 Run the interactive UI with Streamlit
 
 💡 Notes
+
+
 .env and virtual environment folder (env/) are ignored via .gitignore.
 Use requirements.txt to install all dependencies.
 Keep sensitive keys secret; never upload .env to GitHub.
