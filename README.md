@@ -62,45 +62,8 @@ LangGraph_Project/
 
 🔗 Workflow Diagram
 
+<img width="1058" height="2099" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/db09e6ff-74ee-48b7-a0c0-5cc55ff6ae3c" />
 
-+--------------------+       +------------------+       +------------------+
-| LLM Examples       | --->  | LLM Workflows    | --->  | Prompt Chaining  |
-+--------------------+       +------------------+       +------------------+
-        |
-        v
- +------------------+
- | Conditional Flow |
- +------------------+
-        |
-        v
- +------------------+
- | Parallel Flow    |
- +------------------+
-        |
-        v
- +------------------+
- | Chatbot Example  |
- +------------------+
-        |
- +------+------+
- |             |
- v             v
-RAM Storage   Persistent DB
-        |
-        v
-  Chatbot Resume
-        |
-        v
- Streaming Output
-        |
-        v
-      RAG Queries
-        |
-        v
-   Tool Integration
-        |
-        v
-     Streamlit UI
 
 
 
