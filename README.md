@@ -1,5 +1,5 @@
 
-LangGraph Project
+**LangGraph Project**
 
 
 📌 Overview
